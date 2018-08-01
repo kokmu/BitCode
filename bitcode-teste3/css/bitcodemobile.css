@@ -1,0 +1,171 @@
+
+/*tamanho padrão para smartphone*/
+@media only screen and (max-width: 480px){
+	.header-black ul, #menu {
+		display: none;
+	}
+	/*ja que o ul do header black e do menu vao sair e com isso vou usar o mesmo codigo 
+	eu posso colocar um "," o outro e escrever o codigo que sera executado para os dois */
+	header{
+		height: 101px;
+	}
+	header #logotipo{
+		left: 32%;
+		z-index: 10;
+		transition: 1s;
+	}
+	header .header-black {
+		height: 40px;
+		color:rgba(4, 126, 232, .8);
+	}
+	header.open-menu #menu-mobile{
+		left: 0px;
+	}
+	header #menu-mobile{
+		position: fixed;
+		background-color: #fff;
+		width: 80%;
+		height: 100%;
+		left: -80%;
+		transition: 1s;
+		z-index: 5;
+	}
+	header.open-menu #menu-fundo{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,.6);
+		top: 0;
+		left: 0;
+		z-index: 4;
+	}
+	header.open-menu #menu-mobile ul {
+		margin: 20px;
+		margin-top: 110px;
+	}
+	header.open-menu #menu-mobile li {
+		text-align: center;
+		
+		border-bottom: rgb(4, 126, 240) 1px solid;
+
+	}
+	header.open-menu #menu-mobile li a {
+		color:rgb(4, 126, 240);
+		font-family: 'openSans';
+		font-weight: bold;
+		font-size: 25px;
+		padding: 10px;
+		display: block; 
+    }
+    header.open-menu .bar-close {
+    	position: absolute;
+    	bottom: 40px;
+    	background-color:rgb(4, 126, 240);
+    	height: 48px;
+    	width: 100%; 
+    }
+    header.open-menu .bar-close .btn-close {
+    	background:none;
+    	border: none;
+    	color: rgb(4, 126, 240);
+    	font-size: 22px;
+    } 
+    header #input-search-mobile{
+    	position: fixed;
+    	top: -40px;
+    	transition: 1.5s;
+    	width: 70%;
+    	left:15%;
+    	background-color:rgb(4, 126, 240);
+    	height: 40px;
+    	border: none;
+    	outline: 0;
+    	z-index: 10;
+    }
+    header.open-search #input-search-mobile {		
+		top: 0;
+	}
+	#footer{
+		top: 20px;
+    	margin-top: 10px
+	}
+	#logotipo {
+		left: 35%;
+		top: 40px;
+	}
+	#imge{
+		display: none;
+	}
+	#imgmobile{
+		display:inline-block;
+		margin-right: 16px;
+		margin-bottom: 15px;
+	}
+	#btn-bars, #btn-search {
+		color: #fff;
+		font-size: 22px;
+		position: absolute;
+		top: 6px;
+		background:none;
+		border: none;
+		display: block;
+		z-index: 9;
+	}
+	#btn-bars{
+		left: 4px;
+		color: #0B1D63;
+	}
+	#btn-search{
+		right: 4px;
+		color: #0B1D63;
+	}
+	#banner{
+		display: none;
+	}
+	.row{
+		margin-top: 200px;
+	}
+	#news{
+		top: -225px;
+	}
+	#news h2{
+		margin-top: 50px;
+		margin-bottom:10px;
+		font-size: 30px;
+	}
+	#news hr{
+		margin-top: 20px;
+		margin-bottom:10px;
+	}
+	#news h3{
+		position: absolute;
+		margin-right:-400px;
+		margin-top: -100px;
+		left: 140px;
+	}
+	#news .thumbnails h4{
+    	display: block;
+    	position: absolute;
+    	margin-top: -75px;
+    	left: 115px;
+    	margin-right:12px;
+    	color:rgb(4, 126, 240);
+		font-size: 14px;
+		font-style: italic;
+				
+	}
+	#img{
+		width: 100px;
+		margin-bottom: 20px;
+	}
+	.col-md-3{
+		padding-right: 280px;
+	}
+	section{
+    height: 628px;
+	}
+	#fim{
+		margin-top: -200px;
+	}
+
+}

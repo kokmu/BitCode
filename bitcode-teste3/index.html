@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width:device-width, initial-scale=1">
+		<title>BitCode</title>
+		<link rel="stylesheet" href="bib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bitcode.css">
+		<link rel="stylesheet" href="css/bitcodemobile.css">
+
+	</head>
+	<body>
+
+		<header>
+
+			<div id="menu-fundo" class="visible-xs"></div>
+			<div id="menu-mobile" class="visible-xs">
+				<ul class="list-unstyled">
+					<li><a href="#">Home</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+				</ul>
+				<div class="bar-close">
+					<button type="button" class="btn-close"><i class="fa fa-close"></i></button>
+				</div>
+			</div>
+			
+			<div class="container">
+				<img id="logotipo" src="img/0110.png" alt="Logotipo">
+			</div>
+
+			<div class="header-black">
+				<div class="container">
+					<input type="search" id="input-search-mobile" class="visible-xs" placeholder="buscar...">
+					<button id="btn-bars" type="button"><i class="fa fa-bars"></i></button>
+					<button id="btn-search" type="button"><i class="fa fa-search"></i></button>
+					
+					<div class="row">
+						
+						<nav id="menu" class="pull-right">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="noticias.html">Noticias</a></li>
+								<li class="search">
+									<div class="input-group">
+								      <input type="search" placeholder="Buscar"  id="input-search">
+								      <span class="input-group-btn">
+								        <button type="button"><i class="fa fa-search"></i></button>
+								      </span>
+								    </div><!-- /input-group -->
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>			
+			</div>
+		</header>
+
+		<section>
+			
+			<div id="banner">
+				
+				<h1>BitCode<small>Seu site de programação</small></h1>
+
+			</div>
+
+			<div id="news" class="container">
+				
+				<div class="row text-center">
+					<h2>Cursos em Alta</h2>
+					<hr>	<!-- criação de uma linha horizontal-->
+				</div>
+
+			
+			<div class="row thumbnails text-center">
+				<div class="col-md-3">
+					<img src="img/py.jpeg" id="imge">
+					<img src="img/pymobile.jpg" id="imgmobile">
+					<h3>Curso de Python</h3>
+					<h4>aqui ficara o resumo da noticia ou curso</h4>
+				</div>
+
+				<div class="col-md-3">
+					<img src="img/js.jpeg" id="imge">
+					<img src="img/jsmobile.jpg" id="imgmobile">
+					<h3>Curso de JavaScript</h3>
+					<h4>aqui ficara o resumo da noticia ou curso</h4>
+				</div>
+
+				<div class="col-md-3">
+					<img src="img/jv.jpeg" id="imge">
+					<img src="img/jvmobile.jpg" id="imgmobile">
+					<h3 id="curso1">Curso de Java</h3>
+					<h4>aqui ficara o resumo da noticia ou curso</h4>
+				</div>
+
+				<div class="col-md-3">
+					<img src="img/php.jpeg" id="imge">
+					<img src="img/phpmobile.jpg" id="imgmobile">
+					<h3 id="curso2">Curso de PHP</h3>
+					<h4>aqui ficara o resumo da noticia ou curso</h4>
+				</div>
+
+			</div>
+		</div>
+		</section>
+		<div class="container-fluid">
+			<div id="footer" class="row">
+				<div class="col-md-4">
+					<div class="footer fixed-bottom">
+					<h1>BITCODE</h1>
+					<p><i class="fa fa-envelope"></i> bitcode@gmail.com</p>
+					<p><i class="fa fa-phone"></i> (xx)xxxxx-xxxx</p>
+					<h5>Siga-nos em nossas redes Sociais</h5>
+					<br>
+					<a href="https://www.facebook.com" target="_blank"><img src="img/Facebook.jpg" class="img-circle" width = "50px" height = "50px"/></a>
+					<a href="https://www.twitter.com" target="_blank"><img src="img/Twitter.png" class="img-circle" width = "50px" height = "50px"/></a>
+					<a href="https://www.linkedin.com/" target="_blank"><img src="img/Linkedin.png" class="img-circle" width = "50px" height = "50px"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="bib/jquery/jquery.min.js"></script>
+			<script type="text/javascript">
+			$("#btn-bars").on("click", function(){
+				$("header").toggleClass("open-menu");
+		});</script>
+			<script type="text/javascript">
+			$("#menu-mobile-mask, .btn-close").on("click", function(){
+				$("header").removeClass("open-menu");
+		});</script>
+		<script type="text/javascript">
+			$("#btn-search").on("click", function(){
+
+      			$("header").toggleClass("open-search");
+      			$("#input-search-mobile").focus();
+      	});</script>
+		<script src="bib/bootstrap/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

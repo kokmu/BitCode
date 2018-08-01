@@ -1,0 +1,151 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+header {
+	width: 100%;
+	height: 150px;
+	background-color: rgba(4, 126, 232, .8);
+	z-index: 2;
+    position: relative;
+}
+header .container {
+	position: relative;
+}
+header .header-black {
+	background-color: rgb(4, 126, 240);
+	height: 0px;
+}
+header #logotipo {
+	position: absolute;
+	top: 11px;
+	z-index: 3;
+}
+.col-md-3 {
+	margin-bottom: 12px;
+}
+#menu {
+	margin-top: 8px;
+}
+#menu li {
+	display: inline-block;
+	font-family: "OpenSans";
+	margin-top: 28px;
+}
+#menu li.search {
+	width: 182px;
+	transition-duration: 1.5s;
+}
+#menu li.search.ativo {
+	width: 300px;
+}
+#menu li.search input {
+	background-color:rgb(4, 126, 240);
+	color: #fff;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 8px;
+}
+#menu li.search.ativo input {
+	width: 300px;
+}
+#menu li.search ::-webkit-input-placeholder {
+	color: #fff;	
+}
+#menu li.search button {
+	background: none;
+	border: none;
+	position: absolute;
+    right: 3px;
+    top: 7px;
+}
+#btn-search{
+	   right: 10px;
+}
+#menu li.search button i {
+	font-size: 14px;
+	color: rgba(255, 255, 255, .9);
+}
+#menu li a {
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#menu li.search .input-group {
+	top: 8px;
+}
+#banner {
+	width: 100%;
+	height: 728px;
+	position: relative;
+	background: url("../img/tecnologia.png") no-repeat;
+	background-position: 0px -10px;
+	top: -169px;
+}
+#banner h1 {
+	color: #fff;
+	top: 300px;
+	position: relative;
+	font-size: 92px;
+	text-shadow:2px 2px 2px rgba(0, 0, 0, .45);
+	font-family: 'OpenSans-Light';
+	margin-left: 50px;
+}
+#banner h1 small {
+	font-size: 32px;
+	display: block;
+	color: #FFF;
+	font-family: 'OpenSans';
+	font-weight: bold;
+}
+#imgmobile{
+	display: none;
+}
+#news {
+	position: relative;
+    top: -148px;
+}
+#news h2 {
+	color:rgb(4, 126, 240);
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#news hr{
+	border: rgb(4, 126, 240) solid 2px;
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+#news .thumbnails{
+	margin-top: 10px;
+}
+#news .thumbnails h3{
+	color:rgb(4, 126, 240);
+	font-size: 20px;
+	font-weight: bold;
+}
+#news .thumbnails h4{
+	display: none;
+}
+#btn-bars, #btn-search{
+	display: none;
+}
+section{
+	margin-bottom: -45px;
+}
+
+#footer{
+	color: #ffffff;
+	background-color: #1C1C1C;	
+}
